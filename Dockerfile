@@ -29,7 +29,7 @@ RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.10 10
 WORKDIR ./
 COPY hello.py ./hello.py
 
-COPY imagetree/kfpipeline/requirements.txt requirements.txt
+COPY requirements.txt ./requirements.txt
 RUN pip3 install -r requirements.txt --upgrade
 
 # Set the command to be executed when launching a container from this image
